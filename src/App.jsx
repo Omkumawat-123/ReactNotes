@@ -1,4 +1,4 @@
-import React ,{useState}from 'react'
+import React ,  {useState}from 'react'
 
 function App() {
    
@@ -7,7 +7,8 @@ function App() {
   return (
     <div>
       <h1 onClick={()=> SetState(state*10) }> {state}  </h1> 
-    </div>// we cant directly change the {state=10} like this  Suppose we have to change state we can change it using {Setstate(state=10)} like this 
+    </div>//we can't directly change the state like this: state = 10 
+    // Suppose we want to change the state — we should do it using SetState(10) instead of directly writing state = 10, because React doesn't allow direct state updates
     
   )
   
